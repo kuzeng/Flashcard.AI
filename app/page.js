@@ -6,11 +6,8 @@ import Head from "next/head";
 
 export default function Home() {
   const handleSubmit = async () => {
-    const checkoutSession = await fetch('/api/checkout_session', {
+    const checkoutSession = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/checkout_session`, {
       method: 'POST',
-      headers: {
-        origin: 'http://localhost:3000',
-      },
     })
 
     const checkoutSessionJson = await checkoutSession.json()
