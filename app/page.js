@@ -41,7 +41,7 @@ export default function Home() {
         <meta name="description" content="Create Flashcard from your text" />
       </Head>
 
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: '#2c3e50', borderBottom: '3px solid gold' }}>
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>Flashcard SaaS</Typography>
           <SignedOut>
@@ -83,6 +83,10 @@ export default function Home() {
             href={"/generate"}
             sx={{
               my: 2,
+              backgroundColor: 'gold', // Hogwarts gold
+              '&:hover': {
+                backgroundColor: 'darkgoldenrod',
+              },
             }}>
             Get Started
           </Button>
@@ -94,6 +98,10 @@ export default function Home() {
             href={"/sign-in"}
             sx={{
               my: 2,
+              backgroundColor: 'gold', // Hogwarts gold
+              '&:hover': {
+                backgroundColor: 'darkgoldenrod',
+              },
             }}>
             Get Started
           </Button>
@@ -150,8 +158,8 @@ export default function Home() {
           <Grid item xs={12} md={6}>
             <Box sx={{
               p: 3,
-              border: "1px solid",
-              borderColor: "grey.300",
+              border: "2px solid",
+              borderColor: "gold", // Hogwarts gold
               borderRadius: 2,
             }}>
               <Typography variant="h5" sx={{ mb: 2 }}>Basic</Typography>
@@ -160,14 +168,23 @@ export default function Home() {
                 {' '}
                 Access to basic flashcard features and limited storage.
               </Typography>
-              <Button variant="contained" color="primary" sx={{ mt: 2 }}>Subscribe</Button>
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{
+                  my: 2,
+                  backgroundColor: 'gold', // Hogwarts gold
+                  '&:hover': {
+                    backgroundColor: 'darkgoldenrod',
+                  },
+                }}>Subscribe</Button>
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
             <Box sx={{
               p: 3,
-              border: "1px solid",
-              borderColor: "grey.300",
+              border: "2px solid",
+              borderColor: "gold", // Hogwarts gold
               borderRadius: 2,
             }}>
               <Typography variant="h5" sx={{ mb: 2 }}>Pro</Typography>
@@ -179,7 +196,13 @@ export default function Home() {
               <Button
                 variant="contained"
                 color="primary"
-                sx={{ mt: 2 }}
+                sx={{
+                  my: 2,
+                  backgroundColor: 'gold', // Hogwarts gold
+                  '&:hover': {
+                    backgroundColor: 'darkgoldenrod',
+                  },
+                }}
                 onClick={handleSubmit}
               >Subscribe</Button>
             </Box>

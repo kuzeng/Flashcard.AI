@@ -7,7 +7,7 @@ export default function SignUpPage() {
     <Container maxWidth="100vw" style={{
       padding: 0,
     }}>
-      <AppBar position="static">
+       <AppBar position="static" style={{ backgroundColor: '#2c3e50', borderBottom: '3px solid gold' }}>
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>Flashcard SaaS</Typography>
           <Button color="inherit">

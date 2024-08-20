@@ -7,21 +7,21 @@ export default function SignInPage() {
     <Container maxWidth="100vw" style={{
       padding: 0,
     }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: '#2c3e50', borderBottom: '3px solid gold' }}>
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>Flashcard SaaS</Typography>
           <Button color="inherit">
             <Link href="/sign-in" passHref>
-            <Typography variant="body" sx={{
-              color: 'white',
-            }}>Sign In</Typography>
+              <Typography variant="body" sx={{
+                color: 'white',
+              }}>Sign In</Typography>
             </Link>
           </Button>
           <Button color="inherit">
             <Link href="/sign-up" passHref>
-            <Typography variant="body" sx={{
-              color: 'white',
-            }}>Sign Up</Typography>
+              <Typography variant="body" sx={{
+                color: 'white',
+              }}>Sign Up</Typography>
             </Link>
           </Button>
         </Toolbar>
